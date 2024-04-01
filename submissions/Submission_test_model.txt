@@ -1,0 +1,79 @@
+24-04-01 17:13:11.436 : Results of X2
+24-04-01 17:13:11.436 : Params number: 2225153
+24-04-01 17:14:05.672 : Results of test_model
+24-04-01 17:14:05.672 : Params number: 2225153
+24-04-01 17:14:34.604 : Results of test_model
+24-04-01 17:14:34.604 : Params number: 2225153
+24-04-01 17:14:49.573 : Results of test_model
+24-04-01 17:14:49.573 : Params number: 2225153
+24-04-01 17:18:50.489 : Results of test_model
+24-04-01 17:18:50.489 : Params number: 2225153
+24-04-01 17:18:51.272 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:19:14.639 : Results of test_model
+24-04-01 17:19:14.639 : Params number: 2225153
+24-04-01 17:19:15.436 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:22:48.949 : Results of test_model
+24-04-01 17:22:48.949 : Params number: 2225153
+24-04-01 17:22:49.736 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:23:48.035 : Results of test_model
+24-04-01 17:23:48.035 : Params number: 2225153
+24-04-01 17:23:48.818 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:24:01.734 : ------> Average runtime of (test_model) is : 216.982428 ms
+24-04-01 17:26:00.466 : Results of test_model
+24-04-01 17:26:00.466 : Params number: 2225153
+24-04-01 17:26:01.253 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:26:14.039 : ------> Average runtime of (test_model) is : 216.883774 ms
+24-04-01 17:29:15.623 : Results of test_model
+24-04-01 17:29:15.623 : Params number: 2225153
+24-04-01 17:29:16.410 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:29:29.217 : ------> Average runtime of (test_model) is : 216.870871 ms
+24-04-01 17:31:23.260 : Results of test_model
+24-04-01 17:31:23.261 : Params number: 2225153
+24-04-01 17:31:24.048 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:31:36.849 : ------> Average runtime of (test_model) is : 216.873755 ms
+24-04-01 17:33:59.459 : Results of test_model
+24-04-01 17:33:59.459 : Params number: 2225153
+24-04-01 17:34:00.248 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:34:13.060 : ------> Average runtime of (test_model) is : 216.764978 ms
+24-04-01 17:34:48.385 : Results of test_model
+24-04-01 17:34:48.385 : Params number: 2225153
+24-04-01 17:34:49.173 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:35:01.971 : ------> Average runtime of (test_model) is : 216.354913 ms
+24-04-01 17:36:09.966 : Results of test_model
+24-04-01 17:36:09.966 : Params number: 2225153
+24-04-01 17:36:10.754 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:36:23.597 : ------> Average runtime of (test_model) is : 216.400284 ms
+24-04-01 17:37:24.912 : Results of test_model
+24-04-01 17:37:24.913 : Params number: 2225153
+24-04-01 17:37:25.696 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:37:38.532 : ------> Average runtime of (test_model) is : 216.422623 ms
+24-04-01 17:37:38.545 :            FLOPs : 397309594881.0000 [G]
+24-04-01 17:37:38.545 :          #Params : 2.2252 [M]
+24-04-01 17:39:33.436 : Results of test_model
+24-04-01 17:39:33.436 : Params number: 2225153
+24-04-01 17:39:34.225 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:39:46.448 : ------> Average runtime of (test_model) is : 141.201505 ms
+24-04-01 17:39:46.460 :            FLOPs : 397309594881.0000 [G]
+24-04-01 17:39:46.461 :          #Params : 2.2252 [M]
+24-04-01 17:41:51.473 : Results of test_model
+24-04-01 17:41:51.473 : Params number: 2225153
+24-04-01 17:41:52.261 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:42:04.486 : ------> Average runtime of (test_model) is : 141.060175 ms
+24-04-01 17:42:27.270 : Results of test_model
+24-04-01 17:42:27.270 : Params number: 2225153
+24-04-01 17:42:28.058 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:42:40.276 : ------> Average runtime of (test_model) is : 140.800137 ms
+24-04-01 17:42:40.465 :            FLOPs : 397309594881.0000 [G]
+24-04-01 17:42:40.465 :          #Params : 2.2252 [M]
+24-04-01 17:43:24.628 : Results of test_model
+24-04-01 17:43:24.635 : Params number: 2225153
+24-04-01 17:43:25.452 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:43:37.461 : ------> Average runtime of (test_model) is : 140.868622 ms
+24-04-01 17:43:37.651 :            FLOPs : 397309594881.0000 [G]
+24-04-01 17:43:37.651 :          #Params : 2.2252 [M]
+24-04-01 17:46:00.564 : Results of test_model
+24-04-01 17:46:00.564 : Params number: 2225153
+24-04-01 17:46:01.399 : Input resolution: torch.Size([1, 30, 3, 1920, 1080])
+24-04-01 17:46:08.190 : ------> Average runtime of (test_model) is : 139.780212 ms
+24-04-01 17:46:08.381 :             MACs : 397309594881.0000 [G]
+24-04-01 17:46:08.381 :          #Params : 2.2252 [M]
