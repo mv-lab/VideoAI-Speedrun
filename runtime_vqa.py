@@ -1,8 +1,6 @@
 """
 Marcos Conde, 2024
 
-Video Quality Assessment Challenge at AIS2024 CVPR
-
 AIS: Vision, Graphics and AI for Streaming CVPR 2024 Workshop
 """
 
@@ -146,7 +144,12 @@ def main(args):
             test_results["runtime"].append(start.elapsed_time(end))  # milliseconds
 
         ave_runtime = sum(test_results["runtime"]) / len(test_results["runtime"])
-        logger.info('------> Average runtime of ({}) is : {:.6f} ms'.format(args.submission_id, ave_runtime))
+        per_frame_time = (ave_runtime / args.batch_size)/args.frames
+
+        logger.info(f"------> INPUT {args.imsize[0]}x{args.imsize[1]}, {args.frames} frames, {args.batch_size} clip")
+        logger.info('------> Average runtime on clip {}-frames  of ({}) is : {:.6f} ms'.format(args.frames, args.submission_id, ave_runtime / args.batch_size ))
+        logger.info('------> Average runtime per frame of ({}) is : {:.6f} ms'.format(args.submission_id, per_frame_time ))
+        logger.info('------> Average FPS of ({}) is : {:.6f} FPS'.format(args.submission_id, 1000 / per_frame_time ))
         
         if not args.trt:
             input_dim    = (args.frames, 3, args.imsize[0], args.imsize[1])
@@ -158,13 +161,13 @@ def main(args):
             # macs2 = get_model_flops(model, input_dim, print_per_layer_stat=False)
             # macs2 = macs2 / 10 ** 9
 
-            logger.info("{:>16s} : {:<.4f} ".format("MACs", macs))
-            logger.info("{:>16s} : {:<.4f} [G]".format("MACs", macs/ 10 ** 9))
+            #logger.info(f"------> MACs per clip {args.frames}-frames : {macs}")
+            logger.info(f"------> MACs per clip {args.frames}-frames : {macs / 10 ** 9 } [G]")
+            logger.info(f"------> MACs per frame : {macs / 10 ** 9 / args.frames } [G]")
 
             num_parameters = sum(map(lambda x: x.numel(), model.parameters()))
             num_parameters = num_parameters / 10 ** 6
-            logger.info("{:>16s} : {:<.4f} [M]".format("#Params", num_parameters))
-
+            logger.info(f"------> #Params {num_parameters} [M]")
 
         
         
@@ -178,7 +181,7 @@ if __name__ == "__main__":
     
     # specify test case
     parser.add_argument("--repeat", type=int, default=5)
-    parser.add_argument("--batch-size", type=int, default=1)
+    parser.add_argument("--batch-size", type=int, default=1, help="Number of ?-frame clips")
     parser.add_argument("--frames", type=int, default=30, help="Number of frames. Default 30FPS.")
     parser.add_argument("--imsize", type=int, nargs="+", default=[1920, 1080], help="Frame resolution.")
     parser.add_argument("--fp16", action="store_true")
